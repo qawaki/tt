@@ -1,0 +1,130 @@
+﻿,Patient.ID,Reason,Visits
+Nathan Lunn (Adrian),,,
+1,8858,Drop-In Centre,1
+2,8858,Drug Poisoning,2
+3,8858,Medication Delivery,3
+4,8858,Phone Call,1
+5,8858,Wellness Check,3
+,,,
+,,,
+,,,
+,,,
+,,,
+Kelly Baswick,,,
+6,16555,Appointment,1
+7,16555,ASIS,1
+8,16555,Drop-In Centre,2
+Less Four Horns,,,
+9,52896,Drop-In Centre,1
+10,52896,Emergency Response,2
+11,52896,Indirect/Case Mgmt,1
+12,52896,Medication Delivery,1
+13,52896,Phone Call,2
+14,52896,Wellness Check,5
+,,,
+,,,
+,,,
+,,,
+Darlene Auger,,,
+15,66275,Drop-In Centre,5
+16,66275,Indirect/Case Mgmt,2
+17,66275,Medication Delivery,1
+18,66275,Phone Call,1
+19,66275,Walk-In,1
+20,66275,Wound Care,1
+,,,
+,,,
+Dawson Jarvis,,,
+21,72287,Appointment,3
+22,72287,ASIS,1
+23,72287,Drop-In Centre,2
+24,72287,Drop-In Isolation,4
+25,72287,Drug Poisoning,2
+,,,
+,,,
+,,,
+,,,
+Patricia Chapman (Dawn),,,
+26,73033,Appointment,2
+27,73033,Drop-In Centre,3
+,,,
+,,,
+,,,
+David Thok (Kuany),,,
+28,74545,ASIS,1
+29,74545,Drop-In Centre,3
+30,74545,Drop-In Isolation,1
+31,74545,Medication Delivery,1
+32,74545,Walk-In,1
+33,74545,Wellness Check,2
+,,,
+,,,
+,,,
+Erin Burris (Isabelle),,,
+34,75724,Appointment,3
+35,75724,Drop-In Centre,31
+36,75724,Housing,1
+37,75724,Injection,2
+38,75724,Lab,3
+39,75724,Medication Delivery,3
+40,75724,Pharm Follow up,1
+41,75724,Phone Call,1
+,,,
+,,,
+Michael Goodfeather (Roy),,,
+42,76579,Appointment,2
+43,76579,Drop-In Centre,1
+44,76579,Medication Delivery,1
+45,76579,Wellness Check,1
+Graham Miles (Douglas),,,
+46,77463,Appointment,1
+47,77463,Drop-In Centre,3
+48,77463,Injection,2
+49,77463,Lab,1
+50,77463,Medication Delivery,2
+51,77463,Walk-In,1
+52,77463,Wellness Check,4
+53,77463,Wound Care,3
+54,77463,AISH/financial suppo,2
+55,77463,Appointment,4
+56,77463,Care Conference,1
+57,77463,Drop-In Centre,6
+58,77463,Injection,1
+59,77463,No show,4
+60,77463,Wellness Check,1
+61,77463,Wound Care,1
+,,,
+Courtney Bird,,,
+62,84999,Appointment,27
+63,84999,Care Conference,7
+64,84999,Drop-In Centre,47
+65,84999,DWI,135
+66,84999,ECG,1
+67,84999,Forms,1
+68,84999,Injection,1
+69,84999,Lab,1
+70,84999,Medication Delivery,165
+71,84999,No show,2
+72,84999,Pharm Initial,1
+73,84999,Phone Call,5
+74,84999,Same day cancel,1
+75,84999,Waiting List,2
+76,84999,Walk-In,3
+77,84999,Wellness Check,14
+78,84999,Wound Care,1
+,,,
+Carrie Saikkonen (Lynn),,,
+79,85880,Appointment,6
+80,85880,Care Conference,1
+81,85880,Crisis Management,1
+82,85880,Driver's Medical,1
+83,85880,Drop-In Centre,10
+84,85880,Drug Poisoning,5
+85,85880,DWI,29
+86,85880,Emergency Response,6
+87,85880,Medication Delivery,59
+88,85880,New Gender Patient,1
+89,85880,Phone Call,15
+90,85880,Walk-In,2
+91,85880,Wellness Check,8
+92,85880,Wound Care,6
