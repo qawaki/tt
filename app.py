@@ -458,3 +458,15 @@ if selection == "Client Dashboard":
     display_main_page()
 elif selection == "Client Journey Map":
     display_client_journey()
+
+# Access the secret password
+secret_password = st.secrets["Clientmap2023!"]
+
+# Use the password in your app
+entered_password = st.text_input("Enter the secret password:", type="password")
+
+if entered_password:
+    if entered_password == secret_password:
+        st.write("Password is correct!")
+    else:
+        st.write("Wrong password! Please try again.")
