@@ -165,7 +165,7 @@ def generate_service_usage_pie_chart(selected_client):
 
 def generate_service_usage_stacked_bar_chart(selected_client):
     # Load the data from the CSV file
-    data_csv = fetch_csv_from_url('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
+    data_csv = fetch_csv_from_url('https://raw.githubusercontent.com/qawaki/tt/main/logs.csv')
     data = pd.read_csv(StringIO(data_csv))
     
     # Filter data for the selected client
