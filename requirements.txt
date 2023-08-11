@@ -3,3 +3,4 @@ plotly==5.15.0
 streamlit==1.25.0
 streamlit-timeline==0.0.2
 plotly-calplot==0.1.16
+requests==2.31.0
