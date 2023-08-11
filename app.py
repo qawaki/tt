@@ -190,8 +190,8 @@ def display_main_page():
     fig, total_days_housed = plot_housing_periods()
 
     # Adjusting the figure size using the sidebar slider values
-    chart_width = st.sidebar.slider("Select Housing Chart Width", 300, 800, 800)
-    chart_height = st.sidebar.slider("Select Housing Chart Height", 300, 600, 450)
+    chart_width = st.sidebar.slider("Select Housing Chart Width", 300, 1000, 800)
+    chart_height = st.sidebar.slider("Select Housing Chart Height", 300, 800, 450)
     fig.update_layout(autosize=True, paper_bgcolor= "#262730", plot_bgcolor="#262730", width=chart_width, height=chart_height)
 
     # Determine the ratio of the Gantt chart width to the total page width
