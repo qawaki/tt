@@ -17,7 +17,7 @@ st.set_page_config(
 
 def plot_housing_periods():
     # Reading the CSV data
-    data_df = pd.read_csv('C:/Users/ArmanS/Desktop/tt/housed_date.csv')  # Replace with your actual path
+    data_df = pd.read_csv('https://raw.githubusercontent.com/qawaki/tt/main/housed_date.csv')
 
     # Parsing the data using the correct column names and calculating the total days housed
     parsed_data = []
@@ -140,7 +140,7 @@ def generate_patient_visits_radar(csv_path, selected_client_name):
 
 def generate_service_usage_pie_chart(selected_client):
     # Load the data from the CSV file
-    data = pd.read_csv('C:/Users/ArmanS/Desktop/tt/storage.csv')
+    data = pd.read_csv('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
     
     # Filter data for the selected client
     client_data = data[data['Client'] == selected_client]
@@ -155,7 +155,7 @@ def generate_service_usage_pie_chart(selected_client):
 
 def generate_service_usage_stacked_bar_chart(selected_client):
     # Load the data from the CSV file
-    data = pd.read_csv('C:/Users/ArmanS/Desktop/tt/logs.csv')
+    data = pd.read_csv('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
     
     # Filter data for the selected client
     client_data = data[data['Client'] == selected_client]
@@ -173,7 +173,7 @@ def display_main_page():
 
     st.title("Client Dashboard")
 
-    csv_path = 'C:/Users/ArmanS/Desktop/tt/bar stack.csv'
+    csv_path = 'https://raw.githubusercontent.com/qawaki/tt/main/bar_stack.csv'
 
 
     fig, total_days_housed = plot_housing_periods()
@@ -233,7 +233,8 @@ def display_main_page():
     col5, col6 = st.columns([chart_ratio, table_ratio])
 
     # Create the select box in col5
-    data = pd.read_csv('C:/Users/ArmanS/Desktop/tt/storage.csv')
+    data = pd.read_csv('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
+    
     client_options = data['Client'].unique().tolist()
     selected_client_for_pie = col5.selectbox('Select Client :', client_options)
 
@@ -341,7 +342,7 @@ def display_client_journey():
 
     # Read timeline data for the selected client
     timeline_data = ''
-    with open(f'C:/Users/ArmanS/Desktop/tt/json/{selected_client}.json', 'r') as f:
+    with open(f'https://raw.githubusercontent.com/qawaki/tt/main/{selected_client}.json', 'r') as f:
         timeline_data = f.read()
 
     # Render client journey map timeline
@@ -354,21 +355,21 @@ def display_client_journey():
 
     # Mapping between client name and CSV file path
     csv_files = {
-        'Carrie Saikkonen (Lynn)': 'C:/Users/ArmanS/Desktop/tt/carrie.csv',
-    'Colin Anderson (D)': 'C:/Users/ArmanS/Desktop/tt/colin.csv',
-    'Courtney Bird': 'C:/Users/ArmanS/Desktop/tt/courtney.csv',
-    'Darlene Auger':'C:/Users/ArmanS/Desktop/tt/darlene.csv', 
-    'David Thok (Kuany)':'C:/Users/ArmanS/Desktop/tt/david.csv',
-    'Dawson Jarvis':'C:/Users/ArmanS/Desktop/tt/dawson.csv', 
-    'Erin Burris (Isabelle)':'C:/Users/ArmanS/Desktop/tt/erin.csv',
-    'Graham Miles (Douglas)':'C:/Users/ArmanS/Desktop/tt/graham.csv', 
-    'Kelly Baswick':'C:/Users/ArmanS/Desktop/tt/kelly.csv', 
-    'Kual Kual (Kual)':'C:/Users/ArmanS/Desktop/tt/kual.csv',
-    'Lambert MedicineTraveller':'C:/Users/ArmanS/Desktop/tt/lambert.csv', 
-    'Less Four Horns':'C:/Users/ArmanS/Desktop/tt/less.csv', 
-    'Michael Goodfeather (Roy)':'C:/Users/ArmanS/Desktop/tt/michael.csv', 
-    'Nathan Lunn (Adrian)':'C:/Users/ArmanS/Desktop/tt/nathan.csv',
-    'Patricia Chapman (Dawn)':'C:/Users/ArmanS/Desktop/tt/patricia.csv',
+        'Carrie Saikkonen (Lynn)': 'https://raw.githubusercontent.com/qawaki/tt/main/carrie.csv',
+    'Colin Anderson (D)': 'https://raw.githubusercontent.com/qawaki/tt/main/colin.csv',
+    'Courtney Bird': 'https://raw.githubusercontent.com/qawaki/tt/main/courtney.csv',
+    'Darlene Auger':'https://raw.githubusercontent.com/qawaki/tt/main/darlene.csv', 
+    'David Thok (Kuany)':'https://raw.githubusercontent.com/qawaki/tt/main/david.csv',
+    'Dawson Jarvis':'https://raw.githubusercontent.com/qawaki/tt/main/dawson.csv', 
+    'Erin Burris (Isabelle)':'https://raw.githubusercontent.com/qawaki/tt/main/erin.csv',
+    'Graham Miles (Douglas)':'https://raw.githubusercontent.com/qawaki/tt/main/graham.csv', 
+    'Kelly Baswick':'https://raw.githubusercontent.com/qawaki/tt/main/kelly.csv', 
+    'Kual Kual (Kual)':'https://raw.githubusercontent.com/qawaki/tt/main/kual.csv',
+    'Lambert MedicineTraveller':'https://raw.githubusercontent.com/qawaki/tt/main/lambert.csv', 
+    'Less Four Horns':'https://raw.githubusercontent.com/qawaki/tt/main/less.csv', 
+    'Michael Goodfeather (Roy)':'https://raw.githubusercontent.com/qawaki/tt/main/michael.csv', 
+    'Nathan Lunn (Adrian)':'https://raw.githubusercontent.com/qawaki/tt/main/nathan.csv',
+    'Patricia Chapman (Dawn)':'https://raw.githubusercontent.com/qawaki/tt/main/patricia.csv',
     }
 
     # Get the CSV file path for the selected client
@@ -425,7 +426,7 @@ def display_client_journey():
     st.write("## Word Treemap")
 
     # Assuming similar mapping as timeline data
-    word_treemap_data_path = f'C:/Users/ArmanS/Desktop/tt/treemap_data/{selected_client}.csv'
+    word_treemap_data_path = f'https://raw.githubusercontent.com/qawaki/tt/main/{selected_client}.csv'
     fig = generate_word_treemap(word_treemap_data_path)
     st.plotly_chart(fig, use_container_width=True)
 
