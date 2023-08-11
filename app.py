@@ -450,14 +450,8 @@ def display_client_journey():
 
 
 
-# Sidebar navigation
 st.sidebar.title("Navigation")
 selection = st.sidebar.radio("Go to:", ["Client Dashboard", "Client Journey Map"])
-
-if selection == "Client Dashboard":
-    display_main_page()
-elif selection == "Client Journey Map":
-    display_client_journey()
 
 # Access the secret password
 secret_password = st.secrets["password"]
@@ -465,8 +459,11 @@ secret_password = st.secrets["password"]
 # Use the password in your app
 entered_password = st.text_input("Enter the secret password:", type="password")
 
-if entered_password:
-    if entered_password == secret_password:
-        st.write("Password is correct!")
-    else:
-        st.write("Wrong password! Please try again.")
+if entered_password == secret_password:
+    st.write("Password is correct!")
+    if selection == "Client Dashboard":
+        display_main_page()
+    elif selection == "Client Journey Map":
+        display_client_journey()
+else:
+    st.write("Please enter the correct password to view the dashboard.")
