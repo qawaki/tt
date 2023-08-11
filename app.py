@@ -25,7 +25,7 @@ def fetch_csv_from_url(url):
 def plot_housing_periods():
     # Reading the CSV data
     data_csv = fetch_csv_from_url('https://raw.githubusercontent.com/qawaki/tt/main/housed_date.csv')
-    data_df = pd.read_csv(pd.StringIO(data_csv))
+    data_df = pd.read_csv(StringIO(data_csv))
 
     # Parsing the data using the correct column names and calculating the total days housed
     parsed_data = []
@@ -68,7 +68,7 @@ def plot_housing_periods():
 def plot_visits_from_csv(csv_path):
     # Read the data from the CSV file
     data_csv = fetch_csv_from_url(csv_path)
-    data = pd.read_csv(pd.StringIO(data_csv))
+    data = pd.read_csv(StringIO(data_csv))
     
     # Drop rows with NaN values in the 'Reason' or 'Visits' columns
     cleaned_data = data.dropna(subset=['Reason', 'Visits'])
@@ -150,7 +150,7 @@ def generate_patient_visits_radar(csv_path, selected_client_name):
 def generate_service_usage_pie_chart(selected_client):
     # Load the data from the CSV file
     data_csv = fetch_csv_from_url('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
-    data = pd.read_csv(pd.StringIO(data_csv))
+    data = pd.read_csv(StringIO(data_csv))
     
     # Filter data for the selected client
     client_data = data[data['Client'] == selected_client]
@@ -166,7 +166,7 @@ def generate_service_usage_pie_chart(selected_client):
 def generate_service_usage_stacked_bar_chart(selected_client):
     # Load the data from the CSV file
     data_csv = fetch_csv_from_url('https://raw.githubusercontent.com/qawaki/tt/main/storage.csv')
-    data = pd.read_csv(pd.StringIO(data_csv))
+    data = pd.read_csv(StringIO(data_csv))
     
     # Filter data for the selected client
     client_data = data[data['Client'] == selected_client]
@@ -262,7 +262,7 @@ def display_main_page():
 def generate_word_treemap(csv_path):
     # Read the client file
     data_csv = fetch_csv_from_url(csv_path)
-    df = pd.read_csv(pd.StringIO(data_csv))
+    df = pd.read_csv(StringIO(data_csv))
 
     # Extract the 'text' column
     text_data = " ".join(df['text'].tolist())
