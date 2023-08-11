@@ -460,7 +460,7 @@ elif selection == "Client Journey Map":
     display_client_journey()
 
 # Access the secret password
-secret_password = st.secrets["Clientmap2023!"]
+secret_password = st.secrets["password"]
 
 # Use the password in your app
 entered_password = st.text_input("Enter the secret password:", type="password")
