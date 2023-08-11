@@ -254,7 +254,7 @@ def display_main_page():
     col5.plotly_chart(pie_chart, use_container_width=True)
 
     # Col6 stacked bar plot
-    selected_client_for_bar = col6.selectbox('Select Client Bar:', client_options)
+    selected_client_for_bar = col6.selectbox('Select Client:', client_options)
     bar_chart = generate_service_usage_stacked_bar_chart(selected_client_for_bar)
     col6.plotly_chart(bar_chart, use_container_width=True)
     
