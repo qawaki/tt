@@ -382,7 +382,8 @@ if authenticate_user():
             'Lambert MedicineTraveller', 'Less Four Horns', 'Michael Goodfeather (Roy)', 'Nathan Lunn (Adrian)',
             'Patricia Chapman (Dawn)'
             ]
-        
+            st.write("# From Arrival to Progress: A Holistic View of The DI Services and Outcomes")
+            
             # Selectbox for clients
             selected_client = st.selectbox('Search or Select client', clients)
             
@@ -394,7 +395,7 @@ if authenticate_user():
                 #timeline_data = f.read()
         
             # Render client journey map timeline
-            st.write("# From Arrival to Progress: A Holistic View of The DI Services and Outcomes")
+            
             st.markdown('---')
             st.write("## Client Journey Map Timeline")
             timeline(timeline_data, height=800)
