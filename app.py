@@ -19,11 +19,17 @@ st.set_page_config(
     layout="wide"
 )
 def creds_entered():
-    if st.session_state["user"].strip() == "admin" and st.session_state["passwd"].strip() == "admin":
-        st.session_state["authenticated"] = True
-    else:
-        st.session_state["authenticated"] = False
-        st.error("Invalid Username/Password")
+        if st.session_state["user"].strip() == "admin" and st.session_state["passwd"].strip() == "admin":
+              st.session_state["authenticated"] = True
+        else:
+                    
+                st.session_state["authenticated"] = False
+                if not st.session_state["passwd"]:
+                       st.warning("Please enter your password.")
+                elif not st.session_state["user"]:
+                        st.warning("Please enter your username.")
+                else:
+                        st.error("Invalid Username/Password")
 
 
 def authenticate_user():
