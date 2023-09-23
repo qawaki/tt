@@ -34,9 +34,9 @@ authenticator = stauth.Authenticate(
     names,
     usernames,
     hashed_passwords, 
-    "sales_dashboard", 
-    "abcdef",
-    cookie_expiry_days=3
+    'sales_dashboard', 
+    'abcdef',
+    cookie_expiry_days=1
 )
 
 name, authentication_status, username = authenticator.login("Login", "main")
