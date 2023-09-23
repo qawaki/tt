@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide"
 )
 def creds_entered():
-        if st.session_state["user"].strip() == "admin" and st.session_state["passwd"].strip() == "Calgarydi<3!":
+        if st.session_state["user"].strip() == "admin" and st.session_state["passwd"].strip() == "Calgarydi<3":
               st.session_state["authenticated"] = True
         else:
                     
