@@ -14,7 +14,7 @@ from io import StringIO
 import streamlit_authenticator as stauth 
 
 import pickle
-from pathlib import path
+from pathlib import Path
 
 # Set page configuration
 st.set_page_config(
