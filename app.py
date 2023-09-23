@@ -33,9 +33,7 @@ with file_path.open("rb") as file:
 authenticator = stauth.Authenticate(
     names,
     usernames,
-    hashed_passwords,
-    app_name="sales_dashboard",
-    app_key="abcdef",
+    hashed_passwords, "sales_dashboard", "abcdef",
     cookie_expiry_days=3
 )
 
