@@ -5,3 +5,5 @@ streamlit-timeline==0.0.2
 plotly-calplot==0.1.16
 requests==2.31.0
 streamlit_authenticator==0.2.3
+path==16.7.1
+pathlib==1.0.1
