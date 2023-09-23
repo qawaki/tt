@@ -24,8 +24,9 @@ def creds_entered():
         else:
                     
                 st.session_state["authenticated"] = False
+                
                 if not st.session_state["passwd"]:
-                       st.warning("Please enter your password.")
+                        st.warning("Please enter your password.")
                 elif not st.session_state["user"]:
                         st.warning("Please enter your username.")
                 else:
