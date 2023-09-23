@@ -31,9 +31,9 @@ file_path = Path("./hashed_pw.pkl")
 with file_path.open("rb") as file:
     hashed_passwords = pickle.load(file)
 authenticator = stauth.Authenticate(
-    names=names,
-    usernames=usernames,
-    hashed_passwords=hashed_passwords,
+    names,
+    usernames,
+    hashed_passwords,
     app_name="sales_dashboard",
     app_key="abcdef",
     cookie_expiry_days=3
