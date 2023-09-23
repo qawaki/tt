@@ -11,7 +11,8 @@ import re
 import requests
 from io import StringIO
 
-import streamlit_authenticator as stauth 
+import streamlit_authenticator as stauth
+from streamlit_authenticator import authenticate
 
 import pickle
 from pathlib import Path
