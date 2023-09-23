@@ -32,7 +32,7 @@ def authenticate_user():
                 st.text_input(label="Password: ", value = " ", key = "passwd", type = "password", on_change = creds_entered)
                 return False
         else:   
-                if st.session_state["authenticated"]
+                if st.session_state["authenticated"]:
                         return True
                 else:
                         st.text_input(label="Username: ", value = " ", key = "user", on_change = creds_entered)
